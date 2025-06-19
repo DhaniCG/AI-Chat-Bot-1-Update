@@ -360,4 +360,35 @@ a {
   }
 }
 
+/* Custom Styles */
 
+@keyframes typingBounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+.live-chat-typing-dot {
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+  background-color: #999;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typingBounce 1.5s infinite ease-in-out;
+}
+
+.live-chat-typing-dot.dot-1 {
+  animation-delay: 0s;
+}
+
+.live-chat-typing-dot.dot-2 {
+  animation-delay: 0.15s;
+}
+
+.live-chat-typing-dot.dot-3 {
+  animation-delay: 0.3s;
+}
